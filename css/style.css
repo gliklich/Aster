@@ -1634,6 +1634,7 @@ body {
 }
 
 .creators__title {
+  padding-bottom: 0.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1655,18 +1656,6 @@ body {
 @supports not (padding-top: clamp( 1.25rem , 0.8928571429rem  +  1.7857142857vw , 2.5rem )) {
   .creators__title {
     padding-top: calc(1.25rem + 1.25 * (100vw - 20rem) / 70);
-  }
-}
-
-@supports (padding-bottom: clamp( 0.75rem , 0.75rem  +  0vw , 0.75rem )) {
-  .creators__title {
-    padding-bottom: clamp( 0.75rem , 0.75rem  +  0vw , 0.75rem );
-  }
-}
-
-@supports not (padding-bottom: clamp( 0.75rem , 0.75rem  +  0vw , 0.75rem )) {
-  .creators__title {
-    padding-bottom: calc(0.75rem + 0 * (100vw - 20rem) / 70);
   }
 }
 
